@@ -32,6 +32,22 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
       'array3' : apiArray(100, apiArray('random', 'address.direction'))
     })
   ],
+  [
+   'crypto-client-e_wallet_transactions', apiObject({
+      'id': 'datatype.uuid',
+      'transaction_type': 'datatype.number',
+   })
+ ],
+ [
+   'order-reason', apiObject({
+      'id': 'datatype.uuid',
+      'order_type_id': 'datatype.uuid',
+      'name': 'lorem.word',
+      'entity_type_id': 'datatype.number',
+      'reason_type': 'datatype.number',
+      'is_available': 'random.boolean',
+   })
+ ],
 [
   'local-depositor', apiObject({
     'id': 'datatype.number',
