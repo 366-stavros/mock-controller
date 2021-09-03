@@ -53,7 +53,7 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
          'id': 'datatype.uuid',
          'name': 'lorem.slug',
          'language_id': 'datatype.number',
-         'content' : 'lorem.sentence',
+         'content' : 'lorem.slug',
        }),
       'entity_type_id': 'datatype.number',
    })
