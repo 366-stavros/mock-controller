@@ -42,7 +42,7 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
    'order-reason', apiObject({
       'id': 'datatype.uuid',
       'order_type_id': 'datatype.uuid',
-      'name': 'lorem.word',
+      'name': 'lorem.slug',
       'entity_type_id': 'datatype.number',
       'reason_type': 'datatype.number',
       'is_available': 'random.boolean',
