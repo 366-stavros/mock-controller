@@ -104,7 +104,7 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
       "affiliate_is_available": 'random.boolean',
       "currency_type": "datatype.number",
       "transaction_check_url": "internet.url",
-      "usdt_omni_transaction_check_url": null
+      "usdt_omni_transaction_check_url": "internet.url"
     }),
     'supported_currency': apiArray('random', apiObject({
       "id": "datatype.number",
@@ -117,7 +117,7 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
       "affiliate_is_available": 'random.boolean',
       "currency_type": "datatype.number",
       "transaction_check_url": "internet.url",
-      "usdt_omni_transaction_check_url": null
+      "usdt_omni_transaction_check_url": "internet.url"
       })),
       'minimum_deposit_usd': 'finance.amount',
       'maximum_deposit_usd': 'finance.amount',
