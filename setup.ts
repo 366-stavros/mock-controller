@@ -119,12 +119,12 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
       "transaction_check_url": "internet.url",
       "usdt_omni_transaction_check_url": "internet.url"
       })),
-      'minimum_deposit_usd': 'finance.amount',
-      'maximum_deposit_usd': 'finance.amount',
+      'minimum_deposit_usd': 'datatype.number',
+      'maximum_deposit_usd': 'datatype.number',
       'credit_line_status': 'random.boolean',
       'allow_credit_line_extention_request': 'random.boolean',
       'local_depositor_wallet_id': 'datatype.number',
-      'credit_line_limit': 'finance.amount',
+      'credit_line_limit': 'datatype.number',
       'credit_line_usage': 'random.boolean',
       'credit_line_stages': 'random.boolean',
       'terms_and_conditions': apiObject({
@@ -141,6 +141,21 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
         'completed_transition_time': 'datatype.number',
       }),
       'status': 'datatype.number',
+  })
+],
+[
+  'order-code', apiObject({
+    'id': 'datatype.number',
+    'code': 'datatype.number',
+    'client_id': 'datatype.number',
+    'contact': apiObject({
+      'id': 'datatype.number',
+      'name': 'name.firstName',
+      'country_id': 'datatype.number'
+    }),
+    'entity_Type': 'datatype.number',
+    'status': 'random.boolean',
+    'enabled': 'random.boolean',
   })
 ]
 ])
