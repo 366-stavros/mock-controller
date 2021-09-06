@@ -1,4 +1,4 @@
-import { apiObject, apiArray, ApiObject } from "./types"
+import { apiObject, apiArray, ApiObject, apiTypeWithArgs } from "./types"
 
 export const TemplateMap: Map<string, ApiObject> = new Map([
   [ 
@@ -12,7 +12,7 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
         'currency': 'finance.currencyName',
         'amount': 'finance.amount',
         'nested': apiObject({
-          'inner_nested': 'datatype.number',
+          'inner_nested': apiTypeWithArgs('datatype.number',{min:100,max:105}),
           'double_nested' : 'address.country'
         })
       }),
