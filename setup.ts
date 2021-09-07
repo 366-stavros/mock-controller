@@ -157,5 +157,16 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
     'status': 'random.boolean',
     'enabled': 'random.boolean',
   })
-]
+],
+['bhavik-template', apiObject({
+    'id': 'datatype.uuid',
+    'country_name' : 'address.country',
+    'nested_object' : apiObject({
+      'count' : 'datatype.number',
+      'array' : apiArray(100, apiObject({
+        'name' : 'name.firstName',
+        'last_name': 'name.lastName'
+      }))
+    })
+})]
 ])
