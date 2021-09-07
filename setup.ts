@@ -162,7 +162,7 @@ export const TemplateMap: Map<string, ApiObject> = new Map([
     'id': 'datatype.uuid',
     'country_name' : 'address.country',
     'nested_object' : apiObject({
-      'count' : 'datatype.number',
+      'count' : apiTypeWithArgs('datatype.number',{min:15,max:25}),
       'array' : apiArray(100, apiObject({
         'name' : 'name.firstName',
         'last_name': 'name.lastName'
