@@ -1,16 +1,16 @@
-# mock-controller
+# Mock Controller
 
-A configurable mock web server which generates fake records for a lot of types.
+A configurable mock web server which generates fake records for a plethora of types.
 
 # Prerequisites
 
-- yarn / npm
-- ts-node -> `npm install -g ts-node`
+- docker
+- docker-compose
 
 # Installation
 
 Fire up your terminal
 
 - Clone the repo, `git clone https://github.com/366-stavros/mock-controller && cd mock-controller`
-- Install the dependencies `yarn install` or `npm install`
-- Start the controller `ts-node index.ts [PORT]`
+- Start the container `docker-compose up`
+- [OPTIONAL] Rebuild the image to get latest local changes `docker-compose build --no-cache mock-server`
